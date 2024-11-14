@@ -5,12 +5,41 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
+  <properties>
+	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+  
   <dependencies>
 	<!-- (Required) spring mvc -->
 	<dependency>
 	    <groupId>org.springframework</groupId>
 	    <artifactId>spring-webmvc</artifactId>
 	    <version>6.1.14</version>
+	</dependency>
+	
+	
+	<!-- Servlet (javax.servlet is Relocated to jakarta.servlet)-->
+	<dependency>
+	    <groupId>jakarta.servlet</groupId>
+	    <artifactId>jakarta.servlet-api</artifactId>
+	    <version>6.0.0</version>
+	    <scope>provided</scope>
+	</dependency>
+
+	<!-- JSP (javax.servlet is Relocated to jakarta.servlet) -->
+	<dependency>
+	    <groupId>jakarta.servlet.jsp</groupId>
+	    <artifactId>jakarta.servlet.jsp-api</artifactId>
+	    <version>4.0.0</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+	<!-- jstl (javax.servlet is Relocated to jakarta.servlet) -->
+	<dependency>
+	    <groupId>jakarta.servlet.jsp.jstl</groupId>
+	    <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+	    <version>3.0.2</version>
 	</dependency>
 	
 	
